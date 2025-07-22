@@ -29,8 +29,8 @@ WiFi Arsenal is a powerful, comprehensive toolkit designed for WiFi security pro
 
 ```bash
 # Clone the repository
-git clone https://github.com/wifi-arsenal/wifi-arsenal.git
-cd wifi-arsenal
+git clone https://github.com/supunhg/WiFi-Arsenal
+cd Wifi-Arsenal
 
 # Run the installation script
 sudo chmod +x install.sh
@@ -63,28 +63,14 @@ WiFi Arsenal is optimized for Kali Linux and includes automatic detection of the
 
 ```bash
 # Start WiFi Arsenal
-sudo wifi-arsenal
+sudo ./wifi_arsenal.sh
 
 # Run automation suite
-sudo wifi-auto
+sudo ./wifi_automation.sh
 
 # Install and verify
 sudo ./install.sh install
 sudo ./install.sh verify
-```
-
-### Command Line Options
-
-```bash
-# Main tool
-wifi-arsenal
-
-# Automation suite
-wifi-auto
-
-# Direct script execution
-sudo /opt/wifi-arsenal/wifi_arsenal.sh
-sudo /opt/wifi-arsenal/wifi_automation.sh
 ```
 
 ## 📖 Detailed Usage Guide
@@ -179,7 +165,7 @@ Advanced automation for batch processing:
 
 ```bash
 # Automation Menu
-sudo wifi-auto
+sudo ./wifi_automation.sh
 
 # Available automations:
 [1] Automated Network Discovery
@@ -189,37 +175,6 @@ sudo wifi-auto
 [5] Automated PMKID Collection
 [6] Automated Evil Twin
 [7] Full Security Assessment
-```
-
-## ⚙️ Configuration
-
-### Configuration File
-
-Location: `/opt/wifi-arsenal/config.conf`
-
-```bash
-# Default wordlist path
-WORDLIST_PATH="/usr/share/wordlists/rockyou.txt"
-
-# Output directory
-OUTPUT_DIR="$HOME/wifi_arsenal_output"
-
-# Attack timeouts (seconds)
-WPS_TIMEOUT=300
-HANDSHAKE_TIMEOUT=60
-PMKID_TIMEOUT=300
-
-# GPU acceleration
-USE_GPU_ACCELERATION=true
-GPU_WORKLOAD_PROFILE=3
-```
-
-### Environment Variables
-
-```bash
-export WIFI_ARSENAL_OUTPUT="/custom/output/path"
-export WIFI_ARSENAL_WORDLIST="/custom/wordlist.txt"
-export WIFI_ARSENAL_INTERFACE="wlan0"
 ```
 
 ## 📊 Reporting
@@ -278,7 +233,7 @@ Select: [6] MAC Address Operations
 
 ```bash
 # Custom wordlist usage
-/opt/wifi-arsenal/wordlists/
+Wifi-Arsenal/wordlists/
 ├── common-passwords.txt
 ├── wifi-specific.txt
 ├── device-defaults.txt
@@ -328,19 +283,19 @@ sudo ip link set wlan0 up
 **Permission Errors:**
 ```bash
 # Ensure root privileges
-sudo wifi-arsenal
+sudo ./wifi-arsenal.sh
 
 # Check file permissions
-sudo chmod +x /opt/wifi-arsenal/*.sh
+sudo chmod +x Wifi-Arsenal/*.sh
 ```
 
 **Missing Dependencies:**
 ```bash
 # Verify installation
-sudo /opt/wifi-arsenal/install.sh verify
+sudo Wifi-Arsenal/install.sh verify
 
 # Reinstall dependencies
-sudo /opt/wifi-arsenal/install.sh install
+sudo Wifi-Arsenal/install.sh install
 ```
 
 ### Debug Mode
@@ -348,7 +303,7 @@ sudo /opt/wifi-arsenal/install.sh install
 ```bash
 # Enable debug logging
 export WIFI_ARSENAL_DEBUG=1
-sudo wifi-arsenal
+sudo ./wifi_arsenal.sh
 
 # Check logs
 tail -f ~/wifi_arsenal_output/wifi_arsenal.log
@@ -377,11 +332,8 @@ We welcome contributions to WiFi Arsenal!
 
 ```bash
 # Fork the repository
-git clone https://github.com/your-username/wifi-arsenal.git
-cd wifi-arsenal
-
-# Create feature branch
-git checkout -b feature/new-attack-method
+git clone https://github.com/supunhg/wifi-arsenal.git
+cd Wifi-Arsenal
 
 # Make changes and test
 sudo ./wifi_arsenal.sh
@@ -430,12 +382,6 @@ WiFi Arsenal builds upon the excellent work of:
 - **Issues**: Report bugs on GitHub Issues
 - **Discussions**: Join community discussions
 - **Security**: Report security issues privately
-
-### Community
-
-- **GitHub**: https://github.com/wifi-arsenal
-- **Documentation**: https://wifi-arsenal.readthedocs.io
-- **Wiki**: Community-maintained guides and tutorials
 
 ---
 
