@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# WiFi Arsenal - Installation and Setup Script
-# Automated installation of dependencies and tool configuration
-# For Kali Linux and Debian-based systems
-
 # Colors
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -216,7 +212,7 @@ setup_wifi_arsenal() {
     if [[ "$KALI_SYSTEM" == true ]]; then
         cat > /home/kali/Desktop/WiFi-Arsenal.desktop << EOF
 [Desktop Entry]
-Version=1.0
+Version=1.1
 Type=Application
 Name=WiFi Arsenal
 Comment=Comprehensive WiFi Security Toolkit
@@ -404,7 +400,6 @@ EOF
     echo -e "${BLUE}• GitHub:${NC} https://github.com/wifi-arsenal"
     echo -e "${BLUE}• Manual:${NC} man wifi-arsenal"
     echo ""
-    echo -e "${RED}⚠️  Remember: This tool is for authorized testing only! ⚠️${NC}"
 }
 
 # Create man page
@@ -414,7 +409,7 @@ create_man_page() {
     mkdir -p /usr/local/man/man1
     
     cat > /usr/local/man/man1/wifi-arsenal.1 << 'EOF'
-.TH WIFI-ARSENAL 1 "2025-07-22" "2.0" "WiFi Arsenal Manual"
+.TH WIFI-ARSENAL 1 "2025-07-22" "2.1" "WiFi Arsenal Manual"
 .SH NAME
 wifi-arsenal \- Comprehensive WiFi Security Testing Toolkit
 .SH SYNOPSIS
@@ -476,7 +471,7 @@ Default output directory
 .SH AUTHOR
 WiFi Arsenal Development Team
 .SH DISCLAIMER
-This tool is for authorized security testing only. Unauthorized access to networks is illegal.
+Be Responsible!
 .SH SEE ALSO
 .BR aircrack-ng (1),
 .BR reaver (1),

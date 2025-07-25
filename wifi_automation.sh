@@ -1,8 +1,6 @@
 #!/bin/bash
 
 # WiFi Arsenal - Automated Attack Suite
-# Advanced automation and batch processing capabilities
-# For Educational and Authorized Testing Only
 
 # Source main script for shared functions
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -487,7 +485,7 @@ generate_assessment_report() {
 <body>
     <h1 class="header">WiFi Security Assessment Report</h1>
     <p><strong>Assessment Date:</strong> $(date)</p>
-    <p><strong>Tool:</strong> WiFi Arsenal v2.0 - Automated Assessment</p>
+    <p><strong>Tool:</strong> WiFi Arsenal v2.1 - Automated Assessment</p>
     
     <div class="section info">
         <h2>Executive Summary</h2>

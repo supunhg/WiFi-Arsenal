@@ -1,9 +1,6 @@
 #!/bin/bash
 
 # WiFi Arsenal - Comprehensive WiFi Security Testing Tool
-# Author: Ethical Hacker Tool
-# Version: 2.0
-# For Educational and Authorized Testing Only
 
 # Colors for output
 RED='\033[0;31m'
@@ -36,7 +33,7 @@ print_banner() {
     ╚══════════════════════════════════════════════════════════════╝
 EOF
     echo -e "${NC}"
-    echo -e "${WHITE}Version: 2.0 | Author: Ethical Hacker Tool${NC}"
+    echo -e "${WHITE}Version: 2.1 | Author: Ethical Hacker Tool${NC}"
     echo -e "${YELLOW}Date: $(date)${NC}"
     echo ""
 }
@@ -634,7 +631,7 @@ generate_report() {
 <body>
     <h1 class="header">WiFi Arsenal Security Assessment Report</h1>
     <p><strong>Generated:</strong> $(date)</p>
-    <p><strong>Tool Version:</strong> WiFi Arsenal v2.0</p>
+    <p><strong>Tool Version:</strong> WiFi Arsenal v2.1</p>
     
     <div class="section">
         <h2>Executive Summary</h2>

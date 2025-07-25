@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # WiFi Arsenal Launcher Script
-# Simple launcher with environment checks and setup
 
 # Colors
 RED='\033[0;31m'
